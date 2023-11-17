@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dokter Umum</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<nav>
+<div class="wrapper">
+<img src="4.jpg"style="width:70%;max-width:100px;margin-top:5px;"/>
+<div class="menu">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#Tentang Dokter">Tentang Dokter</a></li>
+<li><a href="#service">Layanan Spesialisasi</a></li>
+<li><a href="#Pasien Testimoni">Pasien Testimoni</a></li>
+<li><a href="#Jadwal Praktek">Jadwal Praktek</a></li>
+<li><a href="#Kontak">Kontak</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="wrapper">
+
+<!-- untuk home -->
+<section id="home">
+<img src="1.jpg"/>
+<div class="kolom">
+<p><b>"Penyembuhan adalah sebuah seni. Butuh waktu, butuh latihan dan butuh cinta."</b></p>
+
+</div>
+</section>
+
+<!-- tentang dokter -->
+<section id="Tentang Dokter">
+<div class="kolom">
+<h3>Tentang dr. Gingin Ginanjar, Sp.A, M.Kes</h3>
+<img src="2.jpg" style="width:100%;max-width:500px;margin-top:10px;"/>
+<p>dr. Gingin Ginanjar, Sp.A, M.Kes pria kelahiran Bandung ini adalah seorang Dokter Spesialis Anak ahli pediatri fokus pada tindakan pencegahan penyakit, serta memberikan pengobatan pada anak, baik penyakit akut maupun kronis monitoring tumbuh kembang anak, dll.</p>
+<p>Pendidikan : Dokter Spsialis Anak Fakultas Kedokteran, Universitas Padjadjaran, Bandung Tahun 2004.</p>
+<p>Keahlian : Dokter Spesialis Anak - Pediatri. Menangani kesehatan anak, memeriksa dan mengobati berbagai macam kondisi pada bayi, anak, dan remaja, menilai pertumbuhan dan perkembangan anak, memberikan pemahaman kepada ibu mengenai keamanan, dan cara menyusui bayi, imunisasi anak dll.</p>
+</div>
+</section>
+
+<!-- layanan spesialis -->
+<section id="service">
+<p><b>Layanan dan Spesialisasi Dokter Anak</b></p>
+<div class="container">
+<div class="specializations" id="specializations">
+<div class="specialization" onclick="showServices('pediatrician')">Dokter Anak</div>
+<div class="specialization" onclick="showServices('nutritionist')">Nutrisionis Anak</div>
+<div class="specialization" onclick="showServices('psychologist')">Psikolog Anak</div>
+</div>
+
+<div class="services" id="pediatrician">
+<p><b>Dokter Anak</b></p>
+<div class="service">Pemeriksaan Kesehatan Anak</div>
+<div class="service">Imunisasi</div>
+<div class="service">Penanganan Penyakit Umum Anak</div>
+</div>
+
+<div class="services" id="nutritionist">
+<p><b>Nutrisionis Anak</b></p>
+<div class="service">Penentuan Pola Makan Anak</div>
+<div class="service">Konsultasi Gizi</div>
+<div class="service">Penanganan Masalah Gizi Anak</div>
+</div>
+
+<div class="services" id="psychologist">
+<p><b>Psikolog Anak</b></p>
+<div class="service">Konseling Psikologis Anak</div>
+<div class="service">Penanganan Masalah Emosional Anak</div>
+<div class="service">Bimbingan Orang Tua</div>
+</div>
+</div>
+</section>
+<!-- Pasien Testimoni -->
+<section id="Pasien Testimoni">
+    <p><b>Testimoni dari Pasien</b></p>
+<div id="testimonials-container"></div> 
+</section>
+<!-- jadwal praktek -->
+	<section id="Jadwal Praktek">
+		  <p><b>Jadwal Praktek dr.Gingin Ginanjar, Sp.A, M.Kes</b></p>
+			<table class="schedule-table">
+				<tr>
+					<th>Hari</th>
+					<th>Jam Praktek</th>
+				</tr>
+				<tr>
+					<td>Senin - Jumat</td>
+					<td>08:00 - 18:00</td>
+				</tr>
+				<tr>
+					<td>Sabtu- Minggu</td>
+					<td>Libur</td>
+				</tr>
+				<!-- Tambahkan entri jadwal lainnya -->
+			</table>
+		</div>
+        <form id="appointmentForm" >
+        	<p><b>Formulir Perjanjian</b></p>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Tanggal Janji Temu:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="button" onclick="submitForm()">Kirim Janji Temu</button>
+        </form>
+    </div>
+	</section>
+<section id="Kontak">
+			<a href="https://www.google.com/maps/dir/-8.3425074,122.9550342/Klinik+Apotek+KARTINI,+Amagarapati,+Kec.+Larantuka,+Kabupaten+Flores+Timur,+Nusa+Tenggara+Tim./@-8.348491,122.9378013,14z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2dac8184ed3c8c39:0x522f47459762bd0b!2m2!1d122.9940197!2d-8.3356927?entry=ttu"  target="_blank"><p>Lihat Peta di Google Maps</p></a>
+				<img src="peta.jpg" alt="Peta Lokasi"width="70%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+			</a>
+			</div>
+	</section>
+	<h1>Formulir Kontak</h1>
+	<form id="kontakForm" onsubmit="validateForm(event)">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+    </form>
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2023. <b>Bartiagnes</b>SJNYR
+        </div>
+    </div>
+    
+</section>
+</body>
+</html>
